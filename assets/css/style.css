@@ -48,25 +48,6 @@ button {
   font-weight: bold;
 }
 
-.main-section .inner-container a {
-  background: #FA5D03;
-  color: #fff;
-  padding: 18px 37px;
-  font-size: 15px;
-  font-weight: bold;
-  display: inline-block;
-  border-radius: 3px;
-}
-
-.main-section .inner-container a svg {
-  display: none;
-  transition: .3s linear;
-}
-
-.main-section .inner-container a:hover svg {
-  display: inline-block;
-}
-
 .main-section .inner-container .preview {
   min-height: 222px;
   max-height: 222px;
@@ -74,6 +55,25 @@ button {
   background: #fff;
   border-radius: 6px;
   padding: 8px;
+}
+
+.main-section .text-container h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #1b2027;
+}
+
+.main-section .text-container span {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+  color: #1b2027;
+}
+
+.main-section .about-img img {
+  width: 100%;
 }
 
 @media (max-width: 990px) {
@@ -107,6 +107,30 @@ footer p {
 
 .text-right {
   text-align: right;
+}
+
+.start {
+  background: #FA5D03;
+  color: #fff;
+  padding: 18px 37px;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.start svg {
+  display: none;
+  transition: .3s linear;
+}
+
+.start:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.start:hover svg {
+  display: inline-block;
 }
 
 .dark-mode {
