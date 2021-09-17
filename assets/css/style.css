@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #1b2027;
+}
+
+.navbar-brand span {
+  color: #03a0fa;
+}
+
+.main-section {
+  height: 82vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-section .inner-container {
+  padding: 50px;
+  background: #03a0fa;
+  border-radius: 10px;
+}
+
+.main-section .inner-container h2 {
+  color: #1b2027;
+  margin-bottom: 54px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-section .inner-container a {
+  background: #FA5D03;
+  color: #fff;
+  padding: 18px 37px;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.main-section .inner-container a svg {
+  display: none;
+  transition: .3s linear;
+}
+
+.main-section .inner-container a:hover svg {
+  display: inline-block;
+}
+
+.main-section .inner-container .preview {
+  min-height: 222px;
+  max-height: 222px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+@media (max-width: 990px) {
+  .preview-container {
+    margin-top: 20px;
+  }
+}
+
+footer {
+  background-color: #1b2027;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer .navbar-brand a {
+  color: #fff;
+}
+
+footer .navbar-brand a:hover {
+  text-decoration: none;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #f6f6f6;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.dark-mode {
+  background-color: #1b2027;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
