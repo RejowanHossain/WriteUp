@@ -21,10 +21,9 @@
 }
 
 // about page text styling
-@mixin about_info($font-weight, $display, $margin-bottom, $font-size, $color) {
+@mixin about_info($font-weight, $display, $margin-bottom, $font-size) {
     font-weight: $font-weight;
     margin-bottom: $margin-bottom;
     display: $display;
     font-size: $font-size;
-    color: $color;
 }

@@ -2,6 +2,7 @@ const textValue = document.getElementById('textValue');
 const uppercaseBtn = document.getElementById('uppercase');
 const lowercaseBtn = document.getElementById('lowercase');
 const removeSpaceBtn = document.getElementById('removeSpace');
+const points = document.getElementById('points');
 const deleteBtn = document.getElementById('delete');
 const previewText = document.getElementById('previewText');
 
@@ -37,8 +38,23 @@ const removespace = () => {
     previewText.innerHTML = newValue.join();
 }
 
+// function for converting the text into a list
+const listView = () => {
+    let textareaSentence = textValue.value;
+
+    var stringArray = new Array();
+    stringArray = textareaSentence.split(" ");
+
+    var outputString = "<ul>";
+    for (i = 0; i < stringArray.length; i++) {
+        outputString += "<li>" + stringArray[i] + "</li>";
+    }
+    outputString += "</ul>";
+    previewText.innerHTML = outputString;
+}
+
 // function for deleting text
-const deletespace = () => {
+const deleteText = () => {
     textValue.value = '';
     previewText.innerHTML = '';
 
@@ -63,10 +79,11 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // toggle dark/light mode
-
 toggleSwitch.addEventListener('change', () => {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("dark-mode")
+
+
 
 })
 
@@ -74,4 +91,5 @@ textValue.addEventListener('input', write);
 uppercaseBtn.addEventListener('click', uppercase);
 lowercaseBtn.addEventListener('click', lowercase);
 removeSpaceBtn.addEventListener('click', removespace);
-deleteBtn.addEventListener('click', deletespace);
+points.addEventListener('click', listView);
+deleteBtn.addEventListener('click', deleteText);

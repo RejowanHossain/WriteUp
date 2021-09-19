@@ -40,10 +40,10 @@
     // about page
     .text-container {
         h2 {
-            @include about_info($font-weight: bold, $display: block, $margin-bottom: 10px, $font-size: 40px, $color: $dark_color);
+            @include about_info($font-weight: bold, $display: block, $margin-bottom: 10px, $font-size: 40px);
         }
         span {
-            @include about_info($font-weight: bold, $display: block, $margin-bottom: 20px, $font-size: 16px, $color: $dark_color);
+            @include about_info($font-weight: bold, $display: block, $margin-bottom: 20px, $font-size: 16px);
         }
         .start {
             @include generic_button($bg: $progress_bar)
